@@ -1,0 +1,286 @@
+html{
+	font-size: 	2vh;
+}
+
+/* header section*/
+
+.text-center{
+	text-align: center;
+}
+
+.horizontal-navigation{
+	list-style: none;
+	padding: 0px;
+}
+
+.horizontal-navigation li{
+	padding: 0px;
+	display: inline-block;		
+	margin: 0px 1.2rem 0px 1.2rem;
+}
+
+.menu li a:hover{
+	border-bottom: 2px solid grey;
+}
+
+.horizontal-navigation li a{
+	text-decoration: none;
+	color: white;
+	font-size: 1.4rem;
+	font-weight: 20%;
+	transition: color 1s ease-in-out, border-bottom 2s;
+}
+
+.horizontal-navigation li a:hover{
+	color: #9e9e9eeb;
+}
+
+#header-section{
+	width: 100%;
+	height: 60vh;
+	background-image: url("image/header_background.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	opacity: .6;
+	border: 4px solid rgba(200,100,200,.6);
+}
+
+#name-title{
+	color: white;
+	font-size: 4rem;
+}
+
+.social-icon li a i{
+	border-radius: 50%;
+	padding: 1.2rem;
+	font-size: 1.4rem;
+}
+.social-icon li a i:hover{
+	box-shadow: 0px 0px 6px 4px rgba(230,196,196,0.3);
+}
+
+
+/* About */
+#myImage{
+	width: 12rem;
+	height: 12rem;
+	margin: auto;
+	position: relative;
+}
+
+#myImage img{
+	margin-top: -6rem;
+	width: inherit;
+	height:auto;
+	border:4px solid rgba(200,100,200,.6);
+	box-shadow: 0px 0px 10px 5px rgba(200,100,200,.6);
+	border-radius: 50%;
+}
+
+
+section{
+	display: flex;
+	flex-direction: column;
+}
+
+
+section:nth-child(2n){
+	width: 100%;
+	height: auto;
+	background-color: white;
+	border:2px solid rgba(200,100,200,.6);
+}
+section:nth-child(2n+1){
+	width: 100%;
+	height: auto;
+	background-color: #80808029;
+	border:2px solid rgba(200,100,200,.6);
+}
+
+.about-content{
+	margin-top:-6rem;
+	padding: 5rem;
+}
+
+.about-content p{
+	font-size: 1.5rem;
+	line-height: 2.2rem;
+}
+
+
+/*Skills*/
+
+#skills{
+	height: auto;
+}
+
+.section-title{
+	font-size:2.3rem;
+	color: rgba(0,200,270,.8);
+}
+
+.section-title h3{
+	display: inline-block;
+}
+
+.skillMeter{
+	padding: 3rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+
+.skill-bar{
+	height: 3rem;
+	width: 17rem;
+	background-color: #00BCD4;
+	border-radius: 20rem;
+	margin: 3rem 2rem 3rem 2rem;
+	overflow: hidden;
+}
+
+.skill-50{
+	height: 3rem;
+	width: 0%;
+	background-color: #48d6ab;
+	border-radius: 20rem 0rem 0rem 20rem;
+
+}
+
+.skill-text{
+	position: relative;
+	left: 17%;
+	padding: .5rem;
+	font-size: 1.5rem;
+}
+
+/*portfolio*/
+
+#portfolio{
+	width: 100%;
+	height: auto;
+}
+
+
+.project-list{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.projects{
+	width: 18rem;
+	height: 23rem;
+	background-color: red;
+	margin: 5rem;
+}
+
+#edutcation{
+	width: 100%;
+	height: auto;
+}
+
+.education-block:nth-child(2n)::after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: -38%;
+	border-radius: 50%;	
+	width: .7rem;
+	height: .7rem;
+	background-color: grey;
+	z-index: 1;
+}
+
+.education-block:nth-child(2n+1)::after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: -41%;
+	border-radius: 50%;
+	width: .7rem;
+	height: .7rem;
+	background-color: grey;
+	z-index: 1;
+}
+
+
+
+#edutcation-section{
+	width: 80%;
+	height: auto;
+	/*border: 2px solid black;*/
+	position: relative;
+	margin: auto;
+}
+
+.education-block:nth-child(2n){
+	width: 20vw;
+	height: 40vh;
+	border: 2px solid black;
+	position: relative;
+	left: 15%;
+}
+
+.education-block:nth-child(2n+1){
+	width: 20vw;
+	height: 40vh;
+	border: 2px solid black;
+	position: relative;
+	left: 60%;
+}
+
+#divider{
+	height:205vh;
+	border-left: 3px dashed black;
+	position: absolute;
+	top: 8%;
+	left: 50%;
+}
+
+#travler{
+	margin-left: -1.3rem;
+	font-size: 2rem;
+	transform: rotate(90deg);
+	position: sticky;
+	top: 30%;
+}
+
+
+@media screen and (max-width: 800px){
+	#divider{
+		left: 15%;
+	}	
+
+	.education-block{
+		left: 34% !important;
+		width: 40vw !important;
+	}
+
+	.education-block::after{
+		left: -38% !important;
+	}
+
+	html{
+		font-size: 	2.2vh;
+	}
+}
+
+.education-block .title{
+	size:  50%;
+	border-bottom: 2px solid black;
+}
+
+.education-block .details{
+	width: 100%;
+}
+
+.education-block .details p{
+	position: relative;
+	left: 5%;
+}
+

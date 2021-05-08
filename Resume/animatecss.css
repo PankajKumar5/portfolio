@@ -1,0 +1,64 @@
+
+@keyframes rotate_{
+	0%{
+		transform:rotateX(70deg) rotateY(80deg);
+	}
+
+	100%{
+		transform:rotate(-190deg);
+	}
+}
+
+.cube{
+	height: 200px;
+	width: 200px;
+	position: relative;
+	margin: 100px;	
+	transform-style: preserve-3d;
+	perspective: 10000px;
+	transform: rotateX(10deg) rotateY(10deg);	
+	/*animation: rotate_ 1s ease-in-out infinite alternate;*/
+
+}
+
+
+.face{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+}
+
+
+.one{
+	background-color: skyblue;
+}
+
+
+.two{
+	background-color: orange;
+	transform:rotateY(90deg) translateZ(-100px) translateX(-100px);
+}
+
+.three{
+	background-color: red;
+	transform:rotateX(90deg) translateZ(-100px) translateY(100px);
+}
+
+.four{
+	background-color: green;
+	transform:rotateY(90deg) translateX(-100px) translateZ(100px);
+}
+
+.five{
+	background-color: pink;
+	transform:rotateX(90deg) translateY(100px) translateZ(100px);
+}
+
+
+.six{
+	background-color: yellow;
+	transform:rotateZ(90deg) translateY(0px) translateZ(200px);
+}
+
